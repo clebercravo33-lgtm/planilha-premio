@@ -1,14 +1,23 @@
-# Premiação Grupo Nico — PWA
+# PWA — Premiação Grupo NICO
 
-## Publicar no GitHub Pages
-1. Extraia este ZIP.
-2. Envie **todos os arquivos e pastas** para a raiz do repositório GitHub.
+Pacote preparado para publicação no GitHub Pages.
+
+## Arquivos
+- `index.html`: aplicação original adaptada como PWA.
+- `manifest.webmanifest`: identificação e configuração de instalação.
+- `service-worker.js`: cache do aplicativo para abertura posterior.
+- `icons/`: ícones 192×192 e 512×512.
+
+## Publicar no GitHub
+1. Crie ou abra um repositório no GitHub.
+2. Envie **todos os arquivos e a pasta `icons`**, mantendo essa estrutura.
 3. Em **Settings → Pages**, selecione a branch principal e a pasta `/ (root)`.
-4. Aguarde a publicação e abra o endereço HTTPS gerado.
-5. No celular, abra o site no Chrome e escolha **Instalar app** ou **Adicionar à tela inicial**.
+4. Aguarde a publicação e abra o endereço HTTPS gerado pelo GitHub Pages.
 
-## Observações
-- O PWA possui cache básico do aplicativo para permitir abrir a interface offline após o primeiro acesso.
-- Bibliotecas externas (XLSX/PDF) e sincronização Supabase dependem de internet.
-- Os dados salvos em `localStorage` ficam no aparelho/navegador. Para compartilhar dados entre aparelhos, configure o Supabase dentro do aplicativo e confira as permissões/tabelas do projeto.
-- O login padrão exibido no próprio HTML é `admin` / `admin123`. Altere a senha após entrar.
+## Instalar no celular
+Abra o endereço publicado no Chrome e use o menu ⋮ → **Instalar app** ou **Adicionar à tela inicial**.
+
+## Observação importante sobre os dados
+O aplicativo original utiliza armazenamento local do navegador e possui integração opcional com Supabase. O PWA não sincroniza dados entre aparelhos por si só: para compartilhar os mesmos dados entre celulares e computadores, configure corretamente o Supabase na tela **Config** e confira as permissões/políticas das tabelas. O cache offline guarda os arquivos do aplicativo, não substitui a sincronização dos dados.
+
+O HTML original foi mantido; foram acrescentados apenas os arquivos e referências necessários ao PWA.
