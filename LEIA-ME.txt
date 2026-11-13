@@ -1,0 +1,14 @@
+PREMIAÇÃO GRUPO NICO — PWA PARA GITHUB
+
+PUBLICAR NO GITHUB PAGES:
+1. Extraia todos os arquivos deste ZIP.
+2. Envie index.html, manifest.json, service-worker.js, a pasta icons e este LEIA-ME.txt para a raiz do repositório.
+3. No GitHub, abra Settings > Pages.
+4. Em Build and deployment, selecione Deploy from a branch, escolha a branch principal e a pasta /(root), e salve.
+5. Abra o endereço publicado pelo GitHub Pages. Use HTTPS para instalar o PWA.
+
+OBSERVAÇÕES:
+- O aplicativo mantém o funcionamento original do HTML enviado e adiciona os arquivos de instalação/offline.
+- Dados locais continuam armazenados no navegador do aparelho. A sincronização Supabase depende da configuração e de conexão com a internet.
+- Bibliotecas externas e operações online precisam de internet; o cache offline não garante funcionamento offline de todos os recursos.
+- Se atualizar o aplicativo futuramente, aumente a versão CACHE_NAME no service-worker.js para renovar o cache.
